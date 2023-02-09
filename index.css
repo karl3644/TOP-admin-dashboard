@@ -45,10 +45,16 @@ main {
     background-color: rgb(232, 232, 232);
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: 40px 500px 1fr;
+    grid-template-rows: 1fr;
     gap: 10px;
     padding: 0 0 10px 10px;
     height: 100%;
+}
+
+.projects {
+    display: grid;
+    grid-template-rows: 40px 500px;
+
 }
 
 #projects {
@@ -61,21 +67,16 @@ main {
 }
 
 #announcementsTrending {
-    grid-row: 2 / 3;
+    grid-row: 1 / 2;
     grid-column: 2 / 3;
     display: grid;
-    grid-template-rows: 1fr 50px 1fr;
-    max-height: 100%;
+    grid-template-rows: 40px 1fr 50px 1fr;
+    height: 540px;
 }
 
 .projectTitle {
     grid-row: 1 / 2;
     grid-column: 1 / 2;
-}
-
-.announcmentTitle {
-    grid-row: 1 / 2;
-    grid-column: 2 / 3;
 }
 
 .h3Margins {
@@ -122,4 +123,8 @@ aside * {
 
 p {
     font-size: 12px;
+}
+
+h5 {
+    margin: 0;
 }
